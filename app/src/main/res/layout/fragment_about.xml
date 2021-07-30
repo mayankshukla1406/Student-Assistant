@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.About"
+    tools:ignore="ExtraText">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+ <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/r2">
+
+    <TextView
+        android:id="@+id/txtAboutPage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5ce1e6"
+        android:padding="9dp"
+        android:text="STUDENT ASSISTANT"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+
+     <ImageView
+         android:id="@+id/aboutApplogo"
+         android:layout_width="194dp"
+         android:layout_height="92dp"
+         android:layout_below="@+id/txtAboutPage"
+         android:layout_alignParentStart="true"
+         android:layout_centerVertical="true"
+         android:layout_marginStart="104dp"
+         android:layout_marginTop="9dp"
+         android:src="@mipmap/logofinal" />
+
+
+     <RelativeLayout
+        android:layout_below="@+id/aboutApplogo"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/r"
+        >
+
+    <TextView
+        android:id="@+id/sa1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/student_assistant"
+        />
+
+    <TextView
+        android:id="@+id/sa2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sa1"
+        android:layout_width="wrap_content"
+        android:text="@string/student_assistant1"
+        android:layout_marginTop="10sp"
+        />
+    <TextView
+        android:id="@+id/sa3"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sa2"
+        android:layout_width="wrap_content"
+        android:text="@string/student_assistant2"
+        android:layout_marginTop="10sp"
+        />
+        <TextView
+            android:id="@+id/sa4"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sa3"
+            android:layout_width="wrap_content"
+            android:text="@string/App_Version"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Conact Us"
+            android:textAlignment="center"
+            android:layout_below="@id/sa4"
+            android:background="#5ce1e6"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/r"
+    android:weightSum="5"
+    android:orientation="horizontal"
+    >
+
+    <ImageView
+        android:id="@+id/mail_us"
+        android:layout_below="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:src="@mipmap/mal"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:minHeight="12dp"
+        android:maxWidth="12dp"
+    />
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_below="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/face"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:minHeight="12dp"
+        android:maxWidth="12dp"
+        />
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_below="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/twitter"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:minHeight="12dp"
+        android:maxWidth="12dp"
+        />
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_below="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+       android:src="@mipmap/ln"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:minHeight="12dp"
+        android:maxWidth="12dp"
+        />
+    <ImageView
+        android:id="@+id/github"
+        android:layout_below="@+id/r"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@mipmap/github"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:minHeight="12dp"
+        android:maxWidth="12dp"
+        />
+ </LinearLayout>
+
+ </RelativeLayout>
+
+ </androidx.core.widget.NestedScrollView>
+

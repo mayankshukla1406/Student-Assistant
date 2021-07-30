@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.TimeTable">
+
+    <Button
+        android:id="@+id/btUploadTimeTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload New Time Table"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#5ce1e6"
+        />
+    <ImageView
+        android:id="@+id/imgTimeTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btUploadTimeTable"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@mipmap/ic_launcher"
+        />
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/imgTimeTable"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/mycolor1"
+        />
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/timetableBar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/mycolor13">
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+</RelativeLayout>

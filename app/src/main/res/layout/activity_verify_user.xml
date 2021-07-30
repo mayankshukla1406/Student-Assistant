@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VerifyUser"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgappLogo"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitXY"
+        android:layout_margin="10dp"
+        android:contentDescription="LogoImage"
+        />
+    <TextView
+        android:id="@+id/txtotpSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textStyle="normal"
+        android:textColor="@color/mycolor2"
+        android:textSize="18sp"
+        android:text="OTP sent to Your Number:"
+        />
+
+    <EditText
+        android:id="@+id/etEnterOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColorHint="@color/mycolor2"
+        android:hint="Enter the OTP here"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btverifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify The OTP"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/mycolor2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtEmailSendInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textStyle="normal"
+        android:textColor="@color/mycolor2"
+        android:textSize="18sp"
+        android:text="Verification Link Send To Your Given Email ID Do verify it to Create Your Account"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btverifyEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click This Button After Email Verification"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/mycolor2"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        />
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:padding="20dp"
+        android:visibility="gone">
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

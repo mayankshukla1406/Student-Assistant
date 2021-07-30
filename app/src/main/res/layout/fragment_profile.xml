@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Profile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        android:minHeight="?actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+ <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     android:layout_marginBottom="5dp"
+            >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/r2">
+
+        <TextView
+            android:id="@+id/txtProfilePage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5ce1e6"
+            android:padding="8dp"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_profile_foreground"
+            android:layout_below="@+id/txtProfilePage"
+            android:layout_centerInParent="true"
+            />
+
+        <TextView
+            android:id="@+id/txtProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgProfilePic"
+            android:text="Name"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfileName"
+            android:hint="Enter Name"
+            android:inputType="textPersonName"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+            />
+
+
+        <TextView
+            android:id="@+id/txtProfileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etProfileName"
+            android:text="Contact Number"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+
+            />
+
+        <EditText
+            android:id="@+id/etProfileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfileNumber"
+            android:hint="Enter yor contact number"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtProfileRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etProfileNumber"
+            android:text="University Roll Number"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etProfileRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfileRollNumber"
+            android:hint="Enter University Roll Number"
+            android:inputType="number"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+
+            />
+
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etProfileRollNumber"
+            android:text="Email"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmail"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+            />
+        <TextView
+            android:id="@+id/txtProfileDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etEmail"
+            android:text="Department"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etProfileDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfileDepartment"
+            android:hint="Enter depertment"
+            android:inputType="textPersonName"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+
+            />
+
+        <TextView
+            android:id="@+id/txtProfileSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etProfileDepartment"
+            android:text="Semester"
+            android:padding="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <EditText
+            android:id="@+id/etProfileSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtProfileSemester"
+            android:hint="Enter current semester"
+            android:inputType="textPersonName"
+            android:maxLength="18"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/browser_actions_bg_grey"
+            />
+
+        <Button
+            android:id="@+id/btSaveProfile"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/etProfileSemester"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"
+            android:text="Save"
+            android:layout_margin="16dp"
+            android:textColor="@color/black"
+           android:backgroundTint="@color/teal_200"
+            />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

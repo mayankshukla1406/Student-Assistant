@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.armcha.elasticview.ElasticView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:id="@+id/examContent"
+    android:layout_margin="6dp"
+    app:cardElevation="5dp"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="25dp"
+    android:elevation="6dp"
+    app:flexibility="5"
+    >
+
+    <LinearLayout
+        android:id="@+id/examLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="3dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <!--The weight sum property is used to divide the layout into
+        different parts and then giving each layout a particular weight
+        gives it that amount of space on the screen-->
+
+
+        <!--Since each parent layout will have a specific weight, we need
+        not give any width to those layout-->
+
+        <ImageView
+            android:id="@+id/imgExamImage"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1.2"
+            android:padding="5dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="noticeImage" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3.8">
+
+            <TextView
+                android:id="@+id/txtExamName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="Subject Name :"
+                android:textColor="@color/mycolor2"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/txtExamYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Year :"
+                android:layout_below="@+id/txtExamName"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/txtUploadDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtExamYear"
+                android:padding="4dp"
+                android:textColor="@color/mycolor2"
+                android:text="Upload Date"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</io.armcha.elasticview.ElasticView>

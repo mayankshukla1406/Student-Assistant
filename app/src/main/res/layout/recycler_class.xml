@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.armcha.elasticview.ElasticView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:id="@+id/classContent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardElevation="5dp"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    app:flexibility="5">
+
+    <LinearLayout
+        android:id="@+id/classLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="2dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <ImageView
+            android:id="@+id/imgClassImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"
+            android:contentDescription="member_profile" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/txtClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Class Name :"
+                android:textColor="@color/mycolor2"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtClassTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtClassName"
+                android:padding="5dp"
+                android:textColor="@color/mycolor2"
+                android:text="Time :"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtClassLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtClassTime"
+                android:text="Link : "
+                android:padding="5dp"
+                android:textColor="@color/mycolor13"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</io.armcha.elasticview.ElasticView>

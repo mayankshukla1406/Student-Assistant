@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.armcha.elasticview.ElasticView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:id="@+id/facultyContent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardElevation="5dp"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp"
+    app:flexibility="5">
+
+    <LinearLayout
+        android:id="@+id/noticeContent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:padding="3dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="6">
+        <ImageView
+            android:id="@+id/imgFacultyImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:layout_margin="4dp"
+            android:contentDescription="member_profile" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginStart="5dp">
+
+            <TextView
+                android:id="@+id/txtFacultyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="#5ce1e6"
+                android:text="Name of the Faculty Member :"
+                android:textColor="@color/mycolor2"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_profile"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtFacultyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFacultyName"
+                android:padding="5dp"
+                android:textColor="@color/mycolor13"
+                android:text="Email"
+                android:drawableStart="@drawable/ic_email"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtFacultyQualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFacultyEmail"
+                android:text="Qaulification"
+                android:padding="5dp"
+                android:textColor="@color/mycolor2"
+                android:drawableStart="@drawable/ic_baseline_school_24"
+                android:textSize="16sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</io.armcha.elasticview.ElasticView>

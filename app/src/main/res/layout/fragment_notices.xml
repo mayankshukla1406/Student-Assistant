@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="20dp"
+    android:background="#ffffff"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Notices"
+    >
+'
+    <LinearLayout
+        android:id="@+id/btnlinearlayout2"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:background="#5ce1e6"
+
+        >
+    <ImageView
+        android:id="@+id/imgNoticeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/noticelogo"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btUploadNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:layout_margin="15dp"
+        android:text="Upload New Notice"
+        android:textColor="#5ce1e6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+        />
+    </LinearLayout>
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnlinearlayout2"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerNotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/LoadingBar"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/mycolor13">
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+
+
+</RelativeLayout>
+
+
+

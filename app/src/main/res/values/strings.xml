@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">StudentAssistant</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="token">21</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="student_assistant">“Student Assistant Android App” is an creation for assisting the
+        college stdents with the on-gong college curriculam related to Academics, College events,Exam schedules,
+        Regular subject Time table and much more.</string>
+
+    <string name="student_assistant1">Students will get regular updates and timely alert notifications in case of immediate
+           reschedule of timetable or suspension of scheduled class. Student Assistant is an idea to help students with
+           the previous year question papers, topic wise notes and Assignment related details.</string>
+    <string name="student_assistant2"> We have provided an Auto Silent(DND) option which will automatically silent student’s cell phones in case they forget to do so during college hours.
+   </string>
+
+    <string name="App_Version"> App Version 1.0</string>
+    <string name="mail_us">Mail Us</string>
+    <string name="optionsimage">optionsImage</string>
+    <string name="assistant">ASSISTANT</string>
+    <string name="student">STUDENT</string>
+    <string name="enter_your_registered_email">enter your email</string>
+    <string name="examinationResultPage">To check your examination result click on the button given below it will send you to the Lucknow University Website Examination Result Page</string>
+</resources>

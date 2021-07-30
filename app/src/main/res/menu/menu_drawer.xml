@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_dashboard"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile" />
+
+        <item
+            android:id="@+id/ask_feedback"
+            android:icon="@drawable/ic_baseline_feedback_24"
+            android:title="Ask/Feedback"
+            />
+        <item
+            android:id="@+id/aboutApp"
+            android:icon="@drawable/ic_about_app"
+            android:title="About" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Logout"
+            />
+    </group>
+</menu>
+

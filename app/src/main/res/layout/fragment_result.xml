@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Result">
+
+    <ImageView
+        android:id="@+id/imgappLogoResult"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="LogoImage"
+        android:scaleType="fitXY"
+        android:src="@mipmap/finlogohome" />
+
+    <TextView
+        android:id="@+id/txtLogo"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imgappLogoResult"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/student"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#3144a1" />
+    <TextView
+        android:id="@+id/txtExaminationResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/examinationResultPage"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_below="@id/imgappLogoResult"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+    <Button
+        android:id="@+id/btCheckExamResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Check Examination Result"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txtExaminationResult"
+        />
+
+</RelativeLayout>
