@@ -18,7 +18,7 @@ import org.json.JSONObject
 
 class FirebaseNotification(context: Context):ContextWrapper(context) {
     fun sendFCMPush(token:String,title : String,message : String) {
-        val Legacy_SERVER_KEY: String = "AAAA88of9mQ:APA91bEwj0b6yYknDPEOKYFZjGFAdHWABXFzhrFRbWxUY2KJzOe1C-Mdp4D8pTU4SDS1Fr9flRhd_IrFlt0Pl6OwgVVLvZr6AvClvfRH4tq00X3yLHyEGgmQgpwVE4Is1sTLemRRYRaq"
+        val Legacy_SERVER_KEY: String = ""
 
         val msg = message
         val title = title
